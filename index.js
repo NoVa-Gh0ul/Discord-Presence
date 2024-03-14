@@ -15,13 +15,13 @@ function setActivity(config, PresenceClient) {
     PresenceClient.setActivity({
         details: activityDetails,
         state: activityState,
-        largeImageKey: config.large_image_key || "",
-        largeImageText: config.large_image_text || "",
-        smallImageKey: config.small_image_key || null,
-        smallImageText: config.small_image_text || "",
+        largeImageKey: config.large_image_key || "https://cdn.discordapp.com/attachments/1202492769545883709/1217926475966320691/black-discord-logo.png?ex=6605cd6b&is=65f3586b&hm=c21beadf4afddb54e98556b8328583b48dee165ef572a1a190fcee0d1888ace5&",
+        largeImageText: config.large_image_text || "Default Text",
+        smallImageKey: config.small_image_key || "https://cdn.discordapp.com/attachments/1202492769545883709/1217926475966320691/black-discord-logo.png?ex=6605cd6b&is=65f3586b&hm=c21beadf4afddb54e98556b8328583b48dee165ef572a1a190fcee0d1888ace5&",
+        smallImageText: config.small_image_text || "Default Text",
         instance: false,
         startTimestamp: Date.now(),
-        buttons: config.buttons || [],
+        buttons: config.buttons || [{label: "Default Button 1", url: "https://github.com/NoVa-Gh0ul/Discord-Presence#readme"}, {label: "Default Button 2", url: "https://github.com/NoVa-Gh0ul/Discord-Presence#readme"}],
         partySize: config.party_size || undefined,
         partyMax: config.party_max || undefined
     });

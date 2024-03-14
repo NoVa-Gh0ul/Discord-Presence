@@ -1,6 +1,6 @@
 {
   "name": "discord-presence",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple Discord Presence which users can customize to their liking!",
   "main": "index.js",
   "scripts": {
