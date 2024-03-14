@@ -6,7 +6,7 @@ function loadConfig() {
     return JSON.parse(rawConfig);
 }
 
-const ID = ""; // FILL THIS IN
+const ID = config.application_id;
 DiscordRPC.register(ID);
 const PresenceClient = new DiscordRPC.Client({ transport: "ipc" });
 

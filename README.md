@@ -22,9 +22,11 @@ An easily customizable Discord Rich Presence to make your account status pop out
 
 4. Once you've created a new application and named it, copy the application id.
 
-5. Fill in the `config.json` values with your desired options, go into the index.js file to `line 9` and put the application id in between the qotation marks.
+5. Fill in the `config.json` values with your desired options, make sure you replace `YOUR_APPLICATION_ID_HERE` with your actual application id.
 
 6. In the terminal, run `node .`, your RPC should come online!
+
+**NOTE:** You must have the latest version of node.js installed to your local device | Download: https://nodejs.org/en/download
 
 ## Example
 
