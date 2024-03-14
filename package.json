@@ -1,0 +1,22 @@
+{
+  "name": "discord-presence",
+  "version": "1.0.0",
+  "description": "A simple Discord Presence which users can customize to their liking!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoVa-Gh0ul/Discord-Presence.git"
+  },
+  "author": "NoVa Gh0ul",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/NoVa-Gh0ul/Discord-Presence/issues"
+  },
+  "homepage": "https://github.com/NoVa-Gh0ul/Discord-Presence#readme",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}

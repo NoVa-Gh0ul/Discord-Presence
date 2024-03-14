@@ -1,0 +1,20 @@
+{
+    "activity_details": "Your Activity Details",
+    "activity_state": "Your Activity State",
+    "large_image_key": "https://your_large_image_url.png",
+    "large_image_text": "Your Large Text",
+    "small_image_key": "https://your_small_image_url.png",
+    "small_image_text": "Your Small Text",
+    "buttons": [
+        {
+            "label": "Your Button 1",
+            "url": "https://your_button_1_url.com"
+        },
+        {
+            "label": "Your Button 2",
+            "url": "https://your_button_2_url.com"
+        }
+    ],
+    "party_size": null,
+    "party_max": null
+}

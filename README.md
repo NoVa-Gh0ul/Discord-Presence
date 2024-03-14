@@ -1,1 +1,43 @@
 # Discord-Presence
+
+## Overview
+
+An easily customizable Discord Rich Presence to make your account status pop out even more! This tool is very easy to setup and looks great!
+
+## Features
+
+- Full Customization
+- 5 minute setup
+- Great Look!
+
+## Installation + Setup
+
+1. Clone this GitHub Repository at https://github.com/NoVa-Gh0ul/Discord-Presence
+
+2. In the terminal, run `npm install`
+
+3. Go to https://discord.com/developers/applications and create a **new application**
+
+-> **Please keep in mind the name of this application will be the name of your Rich Presence** (see example below)
+
+4. Once you've created a new application and named it, copy the application id.
+
+5. Fill in the `config.json` values with your desired options, go into the index.js file to `line 9` and put the application id in between the qotation marks.
+
+6. In the terminal, run `node .`, your RPC should come online!
+
+## Example
+
+Here's an example of how the default RPC looks:
+
+[![Example](https://cdn.discordapp.com/attachments/1202492769545883709/1217894175660445706/Screenshot_2024-03-14_135531.png?ex=6605af56&is=65f33a56&hm=448ef4f2d352c74ef1dc23cc19eba07c58b6a73250a8153e6f5fa91e980a7296&)](https://github.com/NoVa-Gh0ul/Discord-Presence)
+
+## Config Help
+
+Some things to note about the config.json values below:
+
+- All values are completely optional, if you don't want to add a certain value then leave it empty. (i.e: you might not want a small image or a second button).
+
+- The `party_size` and `party_max` will add a new value next to the Activity State. If you fill party size as 1 and party_max as 4, it will appear as (1 out of 4) next to your Activity State. Personally I don't like it so i've left it as null, but for those who want to use it swap `null` out with your desired number value!
+
+- The `Your Large Text` and `Your Small Text` will appear when hovering your cursor over the respective image (see example above).
