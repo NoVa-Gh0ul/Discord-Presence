@@ -24,8 +24,6 @@ An easily customizable Discord Rich Presence to make your account status pop out
 
 5. Fill in the `config.json` values with your desired options, make sure you replace all of the values with your desired options.
 
-**NOTE:** You must provide values for every option in `config.json`, except the party values at the bottom. Not providing a value for the others above will result in an error. If you dont want to have 2 buttons or something, feel free to fork the repo and open a PR.
-
 6. In the terminal, run `node .`, your RPC should come online!
 
 **NOTE:** You must have the latest version of node.js installed to your local device | Download: https://nodejs.org/en/download
@@ -40,7 +38,7 @@ Here's an example of how the default RPC looks:
 
 Some things to note about the config.json values below:
 
-- All values are completely optional, if you don't want to add a certain value then leave it empty. (i.e: you might not want a small image or a second button).
+- You must provide proper values for every option in `config.json`, except the party values at the bottom. Not providing a value for the others above will result in an error. If you dont want to have 2 buttons or something, feel free to fork the repo and open a PR.
 
 - The `party_size` and `party_max` will add a new value next to the Activity State. If you fill party size as 1 and party_max as 4, it will appear as (1 out of 4) next to your Activity State. Personally I don't like it so i've left it as null, but for those who want to use it swap `null` out with your desired number value!
 
