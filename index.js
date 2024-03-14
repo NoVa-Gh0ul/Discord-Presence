@@ -6,11 +6,7 @@ function loadConfig() {
     return JSON.parse(rawConfig);
 }
 
-const ID = config.application_id;
-DiscordRPC.register(ID);
-const PresenceClient = new DiscordRPC.Client({ transport: "ipc" });
-
-async function setActivity(config) {
+function setActivity(config, PresenceClient) {
     if (!PresenceClient) return;
 
     const activityDetails = config.activity_details || "Default Details";
@@ -21,7 +17,7 @@ async function setActivity(config) {
         state: activityState,
         largeImageKey: config.large_image_key || "",
         largeImageText: config.large_image_text || "",
-        smallImageKey: config.small_image_key || "",
+        smallImageKey: config.small_image_key || null,
         smallImageText: config.small_image_text || "",
         instance: false,
         startTimestamp: Date.now(),
@@ -33,13 +29,17 @@ async function setActivity(config) {
 
 function main() {
     const config = loadConfig();
+    const ID = config.application_id;
+
+    DiscordRPC.register(ID);
+    const PresenceClient = new DiscordRPC.Client({ transport: "ipc" });
 
     PresenceClient.on("ready", async () => {
         console.log("========== RPC ONLINE ==========");
-        await setActivity(config);
+        await setActivity(config, PresenceClient);
 
         setInterval(async () => {
-            await setActivity(config);
+            await setActivity(config, PresenceClient);
         }, 100000000);
     });
 

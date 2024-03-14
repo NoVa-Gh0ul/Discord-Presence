@@ -22,7 +22,9 @@ An easily customizable Discord Rich Presence to make your account status pop out
 
 4. Once you've created a new application and named it, copy the application id.
 
-5. Fill in the `config.json` values with your desired options, make sure you replace `YOUR_APPLICATION_ID_HERE` with your actual application id.
+5. Fill in the `config.json` values with your desired options, make sure you replace all of the values with your desired options.
+
+**NOTE:** You must provide values for every option in `config.json`, except the party values at the bottom. Not providing a value for the others above will result in an error. If you dont want to have 2 buttons or something, feel free to fork the repo and open a PR.
 
 6. In the terminal, run `node .`, your RPC should come online!
 

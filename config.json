@@ -2,17 +2,17 @@
     "application_id": "YOUR_APPLICATION_ID_HERE",
     "activity_details": "Your Activity Details",
     "activity_state": "Your Activity State",
-    "large_image_key": "https://your_large_image_url.png",
-    "large_image_text": "Your Large Text",
-    "small_image_key": "https://your_small_image_url.png",
-    "small_image_text": "Your Small Text",
+    "large_image_key": "https://your_large_image_key.png",
+    "large_image_text": "Your Large Image Text",
+    "small_image_key": "https://your_small_image_key.png",
+    "small_image_text": "Your Small Image Text",
     "buttons": [
         {
-            "label": "Your Button 1",
+            "label": "Your Button 1 Label",
             "url": "https://your_button_1_url.com"
         },
         {
-            "label": "Your Button 2",
+            "label": "Your Button 2 Label",
             "url": "https://your_button_2_url.com"
         }
     ],
