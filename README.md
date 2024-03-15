@@ -12,6 +12,11 @@ An easily customizable Discord Rich Presence to make your account status pop out
 
 ## Installation + Setup
 
+**Follow this tutorial**
+https://youtu.be/JqJ2htyZFpE?si=5_meDRrTHA6aJph_
+
+Or follow these steps:
+
 1. Clone this GitHub Repository at https://github.com/NoVa-Gh0ul/Discord-Presence
 
 2. In the terminal, run `npm install`
